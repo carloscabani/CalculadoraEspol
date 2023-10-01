@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.controllers.VentanaController">
+   <children>
+      <Label layoutX="39.0" layoutY="67.0" text="Porcentaje teorico:" />
+      <Label layoutX="39.0" layoutY="149.0" text="Primer parcial: " />
+      <Label layoutX="217.0" layoutY="149.0" text="Segundo Parcial:" />
+      <Label layoutX="39.0" layoutY="239.0" text="Practico:" />
+      <Label layoutX="244.0" layoutY="239.0" text="Mejoramiento: " />
+      <Button fx:id="ButtonCalcular" layoutX="112.0" layoutY="322.0" mnemonicParsing="false" onAction="#calcular" text="Calculate" />
+      <Button fx:id="buttonReset" layoutX="244.0" layoutY="322.0" mnemonicParsing="false" onAction="#limpiar" text="Resetear" />
+      <TextField fx:id="contenedorTeorico" layoutX="144.0" layoutY="63.0" onKeyTyped="#validarTeorico" prefHeight="25.0" prefWidth="61.0" />
+      <TextField fx:id="contenedorP" layoutX="118.0" layoutY="145.0" onKeyTyped="#validarPrimerP" prefHeight="25.0" prefWidth="52.0" />
+      <TextField fx:id="contenedorS" layoutX="314.0" layoutY="145.0" onKeyTyped="#validarSegundoP" prefHeight="25.0" prefWidth="52.0" />
+      <TextField fx:id="contenedorPractico" layoutX="89.0" layoutY="235.0" onKeyTyped="#validarPractico" prefHeight="25.0" prefWidth="52.0" />
+      <TextField fx:id="contenedorM" layoutX="325.0" layoutY="235.0" onKeyTyped="#validarMejora" prefHeight="25.0" prefWidth="52.0" />
+      <Label fx:id="labelAlertTeorico" layoutX="144.0" layoutY="88.0" textFill="RED" />
+      <Label fx:id="labelPrimerP" layoutX="118.0" layoutY="170.0" textFill="#f40000" />
+      <Label fx:id="labelSegundoP" layoutX="311.0" layoutY="170.0" textFill="#fc0000" />
+      <Label fx:id="labelPractico" layoutX="89.0" layoutY="260.0" textFill="RED" />
+      <Label fx:id="labelMejora" layoutX="326.0" layoutY="260.0" textFill="RED" />
+   </children>
+</Pane>
